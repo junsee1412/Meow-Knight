@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3587858786186326608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3587858787748199644}
   - component: {fileID: 3587858787748199622}
   - component: {fileID: 3587858787748199623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Meow-Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,6 +160,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   groundCheck: {fileID: 3587858786186326608}
+  maxComboDelay: 0.9
 --- !u!50 &3587858787748199622
 Rigidbody2D:
   serializedVersion: 4
