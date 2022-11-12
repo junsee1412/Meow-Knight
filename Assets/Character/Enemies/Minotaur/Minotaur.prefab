@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2334102574980561307}
   - component: {fileID: 2334102574980561287}
   - component: {fileID: 2334102574980561284}
+  - component: {fileID: 1241058763586580416}
   m_Layer: 10
   m_Name: Minotaur
   m_TagString: Untagged
@@ -144,3 +145,21 @@ CapsuleCollider2D:
   m_Offset: {x: -0.05, y: 0.07}
   m_Size: {x: 0.5, y: 0.8}
   m_Direction: 0
+--- !u!114 &1241058763586580416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334102574980561304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff949904a74b5f4d9cfa6f27ae97783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  damage: 2
+  moveSpeed: 5
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 0

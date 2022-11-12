@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7560200054026923019}
   - component: {fileID: 7560200054026923016}
   - component: {fileID: 7560200054026923017}
+  - component: {fileID: 6749772399350453632}
   m_Layer: 10
   m_Name: Mushroom
   m_TagString: Untagged
@@ -144,3 +145,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 0.25, y: 0.65}
   m_Direction: 0
+--- !u!114 &6749772399350453632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560200054026923022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff949904a74b5f4d9cfa6f27ae97783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  damage: 2
+  moveSpeed: 5
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  healthBar: {fileID: 0}

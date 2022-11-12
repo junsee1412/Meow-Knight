@@ -3,7 +3,7 @@ guid: 7635069dafda56280a213812325e4e7c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -119,10 +120,10 @@ TextureImporter:
       name: Meow-Knight_Idle_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 136
-        width: 13
-        height: 15
+        x: 0
+        y: 130
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5e1c92ccbe340c69bcd806e9c125ad2
+      spriteID: 40dba76f168a4284394b3c54bc594c49
       internalID: -441244847
       vertices: []
       indices: 
@@ -140,10 +141,10 @@ TextureImporter:
       name: Meow-Knight_Idle_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 110
-        width: 12
-        height: 15
+        x: 0
+        y: 104
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dcb9ef094295524ea56e12ed8bb1b6e
+      spriteID: f79ea9ad342973f418fd180d98338995
       internalID: 108249036
       vertices: []
       indices: 
@@ -161,10 +162,10 @@ TextureImporter:
       name: Meow-Knight_Idle_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 84
-        width: 12
-        height: 16
+        x: 0
+        y: 78
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184acf4ad8da5da4ca481fb5c8137f03
+      spriteID: 9eb869f68ac4e8e41a457e1074c6967f
       internalID: -1114902864
       vertices: []
       indices: 
@@ -182,10 +183,10 @@ TextureImporter:
       name: Meow-Knight_Idle_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 58
-        width: 12
-        height: 16
+        x: 0
+        y: 52
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb34e617ad13036949313314fa131c8c
+      spriteID: f162bcd88526e3744a3abd8e0d5d94e9
       internalID: -232839454
       vertices: []
       indices: 
@@ -203,10 +204,10 @@ TextureImporter:
       name: Meow-Knight_Idle_4
       rect:
         serializedVersion: 2
-        x: 3
-        y: 32
-        width: 12
-        height: 15
+        x: 0
+        y: 26
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b0e1bbcef6a81cda97a86501d2a5e4c
+      spriteID: 43d01b9457ae5f04bbbafdd760f6bc93
       internalID: -1234550190
       vertices: []
       indices: 
@@ -224,10 +225,10 @@ TextureImporter:
       name: Meow-Knight_Idle_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 6
-        width: 13
-        height: 14
+        x: 0
+        y: 0
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +236,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68675108c2f132995af2739d83ded203
+      spriteID: ace808a0defeee14a86e8ca50185ebd6
       internalID: 1608989163
       vertices: []
       indices: 

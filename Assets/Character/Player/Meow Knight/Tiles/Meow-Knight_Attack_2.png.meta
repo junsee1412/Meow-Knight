@@ -120,12 +120,12 @@ TextureImporter:
       name: Meow-Knight_Attack_2_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 189
-        width: 18
-        height: 24
-      alignment: 9
-      pivot: {x: 0.7, y: 0.32}
+        x: 0
+        y: 168
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: Meow-Knight_Attack_2_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 133
-        width: 28
-        height: 20
-      alignment: 9
-      pivot: {x: 0.27, y: 0.39}
+        x: 0
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Meow-Knight_Attack_2_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 77
-        width: 29
-        height: 19
-      alignment: 9
-      pivot: {x: 0.16, y: 0.41}
+        x: 0
+        y: 56
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Meow-Knight_Attack_2_3
       rect:
         serializedVersion: 2
-        x: 15
-        y: 21
-        width: 33
-        height: 15
-      alignment: 9
-      pivot: {x: 0.15, y: 0.52}
+        x: 0
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +212,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Meow-Knight_Attack_2_3: 1922332370
-      Meow-Knight_Attack_2_5: 1973671007
       Meow-Knight_Attack_2_1: 1022420698
       Meow-Knight_Attack_2_2: 93839949
       Meow-Knight_Attack_2_0: 1609538328

@@ -3,7 +3,7 @@ guid: 3dd64cc1cc91163b29d084a854c256a6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -119,10 +120,10 @@ TextureImporter:
       name: Meow-Knight_Jump_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 270
-        width: 13
-        height: 15
+        x: 0
+        y: 264
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +141,10 @@ TextureImporter:
       name: Meow-Knight_Jump_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 247
-        width: 12
-        height: 16
+        x: 0
+        y: 240
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +162,10 @@ TextureImporter:
       name: Meow-Knight_Jump_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 225
-        width: 13
-        height: 14
+        x: 0
+        y: 216
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +183,10 @@ TextureImporter:
       name: Meow-Knight_Jump_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 197
-        width: 12
-        height: 18
+        x: 0
+        y: 192
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +204,10 @@ TextureImporter:
       name: Meow-Knight_Jump_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 172
-        width: 12
-        height: 19
+        x: 0
+        y: 168
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +225,10 @@ TextureImporter:
       name: Meow-Knight_Jump_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 148
-        width: 12
-        height: 18
+        x: 0
+        y: 144
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +246,10 @@ TextureImporter:
       name: Meow-Knight_Jump_6
       rect:
         serializedVersion: 2
-        x: 2
-        y: 125
-        width: 12
-        height: 16
+        x: 0
+        y: 120
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +267,10 @@ TextureImporter:
       name: Meow-Knight_Jump_7
       rect:
         serializedVersion: 2
-        x: 2
-        y: 101
-        width: 12
-        height: 16
+        x: 0
+        y: 96
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +288,10 @@ TextureImporter:
       name: Meow-Knight_Jump_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 76
-        width: 12
-        height: 16
+        x: 0
+        y: 72
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +309,10 @@ TextureImporter:
       name: Meow-Knight_Jump_9
       rect:
         serializedVersion: 2
-        x: 2
-        y: 53
-        width: 12
-        height: 15
+        x: 0
+        y: 48
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +330,10 @@ TextureImporter:
       name: Meow-Knight_Jump_10
       rect:
         serializedVersion: 2
-        x: 1
-        y: 30
-        width: 13
-        height: 14
+        x: 0
+        y: 24
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,10 +351,10 @@ TextureImporter:
       name: Meow-Knight_Jump_11
       rect:
         serializedVersion: 2
-        x: 1
-        y: 6
-        width: 13
-        height: 15
+        x: 0
+        y: 0
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
