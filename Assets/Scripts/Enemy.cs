@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float maxHealth = 20f;
-    float currentHealth;
+    public int maxHealth = 20;
+    int currentHealth;
 
     public float damage = 2f;
     public float moveSpeed = 5f;
@@ -17,18 +17,23 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb;
     Collider2D coll;
 
+    public HealthBar healthBar;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         animator.SetTrigger("Hurt");
+
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
