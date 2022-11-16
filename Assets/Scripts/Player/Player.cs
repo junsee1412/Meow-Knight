@@ -4,7 +4,6 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator animator;
-    SpriteRenderer sprite;
     CapsuleCollider2D coll;
 
     public float moveSpeed = 5f;
@@ -19,7 +18,7 @@ public class Player : MonoBehaviour
     bool isTouchingGround;
 
     bool isDodge;
-    bool flipX;
+    bool flipX = true;
 
     // Vector3 respawnPoint;
     // public 
@@ -28,7 +27,6 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<CapsuleCollider2D>();
     }
 
@@ -51,10 +49,10 @@ public class Player : MonoBehaviour
         switch (directionX)
         {
             case 1:
-                flipX = false;
+                if (!flipX) Flip();
                 break;
             case -1:
-                flipX = true;
+                if (flipX) Flip();
                 break;
         }
 
@@ -75,9 +73,13 @@ public class Player : MonoBehaviour
     }
     void PlayerAnimator()
     {
-        sprite.flipX = flipX;
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         animator.SetFloat("OnAir", rb.velocity.y);
         animator.SetBool("OnGround", isTouchingGround);
+    }
+    void Flip()
+    {
+        flipX = !flipX;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
