@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1783731295
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -198484220, guid: c7caeace9ec05134cbf818e2107a0972, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117,7 +117,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7700356775885266025}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ba98502f8edfea248aeab103c82f9154, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -158,8 +158,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  healthBar: {fileID: 0}
   damage: 2
-  moveSpeed: 5
   playerLayers:
     serializedVersion: 2
     m_Bits: 0
+  attackArea: {fileID: 0}
+  attackRadius: 1
+  moveSpeed: 5

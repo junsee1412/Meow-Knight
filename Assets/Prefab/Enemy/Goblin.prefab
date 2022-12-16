@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 5079077161539104448}
   - component: {fileID: 6986497189879996820}
   - component: {fileID: 4134059888437131285}
+  - component: {fileID: 8341387706259516869}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -328,6 +329,19 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 4764913158791210845}
+--- !u!114 &8341387706259516869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461947753882565495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092be9e71d6bf9647b9aaaca11b4056a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 8884999037724132990}
   offset: {x: 0, y: 0.3, z: 0}
 --- !u!1 &5631621224098401580
 GameObject:
@@ -405,8 +419,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1783731295
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1269651800, guid: c0c98ce8f95c6a945b7d14e7836a0687, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,7 +462,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 5631621224098401580}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ba98502f8edfea248aeab103c82f9154, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -496,6 +510,7 @@ MonoBehaviour:
     m_Bits: 512
   attackArea: {fileID: 403554110072791780}
   attackRadius: 1
+  offsetAttack: 0.3
   moveSpeed: 5
 --- !u!1 &8282336426269841810
 GameObject:
