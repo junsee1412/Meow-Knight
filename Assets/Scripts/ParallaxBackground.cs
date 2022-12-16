@@ -18,8 +18,6 @@ public class ParallaxBackground : MonoBehaviour
         _camera = Camera.main.transform;
         sizeX = Layer_Objects[0].transform.localScale.x;
         boundSizeX = Layer_Objects[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x;
-        Debug.Log(sizeX);
-        Debug.Log(boundSizeX);
         for (int i=0;i<layer;i++){
             startPos[i] = _camera.position.x;
         }
