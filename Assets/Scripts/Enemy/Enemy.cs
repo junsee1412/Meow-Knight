@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public LayerMask playerLayers;
     public Transform attackArea;
     public float attackRadius = 1.0f;
+    public float offsetAttack = 0.3f;
     public float moveSpeed = 2f;
     
     bool isAttack;
@@ -72,7 +73,9 @@ public class Enemy : MonoBehaviour
     }
     void Chase()
     {
-        dx = GetNewAxis(player.transform.position.x - transform.position.x);
+        float offset = (flipX ? -offsetAttack : offsetAttack);
+        dx = GetNewAxis(player.transform.position.x - transform.position.x + offset);
+        Debug.Log(dx);
         Moving(dx);
     }
 
