@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D rb;
-    Animator animator;
-    CapsuleCollider2D coll;
+    private Rigidbody2D rb;
+    private Animator animator;
+    private CapsuleCollider2D coll;
 
     public float moveSpeed = 5f;
     public float jumpForced = 8f;
     public float dodgeSpeed = 8f;
-    float directionX = 0f;
-    float directionY = 0f;
+    private float directionX = 0f;
+    private float directionY = 0f;
     
     public float groundCheckRadius = 0f;
     public LayerMask groundMask;
     public Transform groundCheck;
-    bool isTouchingGround;
+    private bool isTouchingGround;
 
-    bool isDodge;
-    bool flipX = true;
+    private bool isDodge;
+    private bool flipX = true;
 
     // Vector3 respawnPoint;
     // public 
@@ -60,11 +60,6 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForced);
         }
-        // else if (directionY < 0 && !isTouchingGround && isAttack)
-        // {
-        //     rb.velocity = new Vector2(rb.velocity.x, -jumpForced);
-        //     animator.SetTrigger("Attack");
-        // }
     }
     public void PlayerDodge()
     {

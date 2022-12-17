@@ -2,39 +2,30 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    Vector2 startPoint;
-    public int maxHealth = 20;
-    int currentHealth;
-    public HealthBar healthBar;
+    private Vector2 startPoint;
 
-    public float damage = 2f;
     public LayerMask playerLayers;
     public Transform attackArea;
     public float attackRadius = 1.0f;
     public float offsetAttack = 0.3f;
     public float moveSpeed = 2f;
     
-    bool isAttack;
-    // int noOfAttack = 0;
-    // float lastAttackTime = 0f;
-    bool inRanged;
-    bool flipX = true;
-    float dx;
-    Animator animator;
+    private bool inRanged;
+    private bool flipX = true;
+    private float dx;
 
-    Rigidbody2D rb;
-    Collider2D coll;
-    GameObject player;
+    private Animator animator;
+    private Rigidbody2D rb;
+    private Collider2D coll;
+    private GameObject player;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
-        healthBar.SetMaxHealth(maxHealth);
         player = GameObject.FindGameObjectWithTag("Player");
         
-        currentHealth = maxHealth;
         startPoint = rb.transform.position;
     }
 
@@ -51,31 +42,10 @@ public class Enemy : MonoBehaviour
         }
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
-
-    public void TakeDamage(int damage)
-    {
-        animator.SetTrigger("Hurt");
-
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-    void Die()
-    {
-        animator.SetBool("IsDead", true);
-        this.enabled = false;
-        rb.simulated = false;
-        coll.enabled = false;
-    }
     void Chase()
     {
         float offset = (flipX ? -offsetAttack : offsetAttack);
         dx = GetNewAxis(player.transform.position.x - transform.position.x + offset);
-        Debug.Log(dx);
         Moving(dx);
     }
 

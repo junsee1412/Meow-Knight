@@ -6,7 +6,6 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    // public Vector3 offset;
 
     public void SetMaxHealth(int health)
     {
@@ -20,8 +19,4 @@ public class HealthBar : MonoBehaviour
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
-    // void Update()
-    // {
-    //     slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
-    // }
 }

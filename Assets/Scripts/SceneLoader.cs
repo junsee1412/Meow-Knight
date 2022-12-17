@@ -10,7 +10,16 @@ public class SceneLoader : MonoBehaviour
     public GameObject pauseMenu;
     void Start()
     {
+        isGameOver = false;
         Time.timeScale = 1;
+    }
+    void Update()
+    {
+        if (isGameOver)
+        {
+            // Time.timeScale = 0;
+            overScreen.SetActive(true);
+        }
     }
     public void QuitGame()
     {
