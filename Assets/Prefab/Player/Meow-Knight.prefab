@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 3587858787748199644}
   - component: {fileID: 8216791801044439576}
   - component: {fileID: 2289774510274835659}
+  - component: {fileID: -7302600619396181972}
   m_Layer: 9
   m_Name: Meow-Knight
   m_TagString: Player
@@ -505,9 +506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa94549fd2197372875ed27fea8144e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDodge: 0
   moveSpeed: 5
-  jumpForced: 10
-  dodgeSpeed: 8
+  jumpForce: 10
+  dodgeForce: 30
   groundCheckRadius: 0.1
   groundMask:
     serializedVersion: 2
@@ -547,6 +549,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 410206738404478075}
   maxHealth: 50
+--- !u!114 &-7302600619396181972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587858787748199617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 26cac9fe15c75e045a1fa542ff5613cd,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &4426115886054374388
 GameObject:
   m_ObjectHideFlags: 0

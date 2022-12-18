@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerCombat : MonoBehaviour
 {
     private Animator animator;
+    private PlayerInput playerInput;
 
-    private bool isDodge;
     private bool isAttack;
     private int noOfAttack = 0;
     private float lastAttackTime = 0f;
@@ -21,12 +20,12 @@ public class PlayerCombat : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerInput = GetComponent<PlayerInput>();
     }
 
     void Update()
     {
-        isDodge = Input.GetButtonDown("Fire1");
-        isAttack = Input.GetButtonDown("Fire2");
+        isAttack = playerInput.actions["Fire2"].triggered;
         if (Time.time - lastAttackTime > maxComboDelay)
         {
             noOfAttack = 0;
@@ -36,7 +35,6 @@ public class PlayerCombat : MonoBehaviour
         {
             Attack();
         }
-        animator.SetBool("Dodge", isDodge);
         animator.SetInteger("AttackState",noOfAttack);
     }
     

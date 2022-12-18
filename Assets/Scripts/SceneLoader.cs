@@ -8,6 +8,9 @@ public class SceneLoader : MonoBehaviour
     public static bool isGameOver;
     public GameObject overScreen;
     public GameObject pauseMenu;
+    public GameObject HandheldPanel;
+
+    private bool pause;
     void Start()
     {
         isGameOver = false;
@@ -20,6 +23,33 @@ public class SceneLoader : MonoBehaviour
             // Time.timeScale = 0;
             overScreen.SetActive(true);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!pause)
+            {
+                PauseGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
+        }
+        if (HandheldPanel != null)
+        {
+            DeviceInfo();
+        }
+    }
+    void DeviceInfo()
+    {
+        if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            HandheldPanel.SetActive(true);
+        }
+        else
+        {
+            HandheldPanel.SetActive(false);
+        }
+        // Debug.Log(SystemInfo.deviceType);
     }
     public void QuitGame()
     {
@@ -27,13 +57,17 @@ public class SceneLoader : MonoBehaviour
     }
     public void PauseGame()
     {
+        pause = true;
         Time.timeScale = 0;
-        pauseMenu.SetActive(true);
+        pauseMenu.SetActive(pause);
+        HandheldPanel.SetActive(!pause);
     }
     public void ResumeGame()
     {
+        pause = false;
         Time.timeScale = 1;
-        pauseMenu.SetActive(false);
+        pauseMenu.SetActive(pause);
+        HandheldPanel.SetActive(!pause);
     }
     public void RetryGame()
     {
