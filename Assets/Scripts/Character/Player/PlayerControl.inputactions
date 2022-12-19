@@ -6,13 +6,22 @@
             "id": "854b6d59-7187-498e-ae34-e58261f15564",
             "actions": [
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "b4752462-d3b5-45c3-b74f-4148c3200b6c",
-                    "expectedControlType": "Button",
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "8aa4cf85-ca2d-4d0d-8235-878a5fe602cf",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "dbddf114-baf3-4946-8717-f1449b29dfc0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Dodge",
@@ -24,19 +33,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire2",
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "dbddf114-baf3-4946-8717-f1449b29dfc0",
+                    "id": "b4752462-d3b5-45c3-b74f-4148c3200b6c",
                     "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Move",
-                    "type": "Value",
-                    "id": "8aa4cf85-ca2d-4d0d-8235-878a5fe602cf",
-                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -67,23 +67,12 @@
                 },
                 {
                     "name": "",
-                    "id": "0eba7829-9fee-45a4-8295-c1bfa1c7c6ea",
-                    "path": "<Keyboard>/#(Z)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dodge",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "be95d1a9-b9e8-45d5-9dbf-40726095eaf0",
                     "path": "<Keyboard>/#(X)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire2",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -128,6 +117,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0eba7829-9fee-45a4-8295-c1bfa1c7c6ea",
+                    "path": "<Keyboard>/#(Z)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dodge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

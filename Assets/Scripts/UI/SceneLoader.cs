@@ -21,7 +21,7 @@ public class SceneLoader : MonoBehaviour
         if (isGameOver)
         {
             // Time.timeScale = 0;
-            overScreen.SetActive(true);
+            overScreen.SetActive(isGameOver);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -43,7 +43,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {
-            HandheldPanel.SetActive(true);
+            if (!isGameOver && !pause) HandheldPanel.SetActive(true);
         }
         else
         {
@@ -60,14 +60,12 @@ public class SceneLoader : MonoBehaviour
         pause = true;
         Time.timeScale = 0;
         pauseMenu.SetActive(pause);
-        HandheldPanel.SetActive(!pause);
     }
     public void ResumeGame()
     {
         pause = false;
         Time.timeScale = 1;
         pauseMenu.SetActive(pause);
-        HandheldPanel.SetActive(!pause);
     }
     public void RetryGame()
     {

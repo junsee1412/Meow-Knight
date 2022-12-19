@@ -25,7 +25,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        isAttack = playerInput.actions["Fire2"].triggered;
+        isAttack = playerInput.actions["Attack"].triggered;
         if (Time.time - lastAttackTime > maxComboDelay)
         {
             noOfAttack = 0;

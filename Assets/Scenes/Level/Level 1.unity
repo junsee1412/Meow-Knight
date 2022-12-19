@@ -205,6 +205,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3587858787748199644, guid: 49c7bacf1d37c8a2ba241173f4ae83e0,
+        type: 3}
+      propertyPath: actionButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7173631232028393125, guid: 49c7bacf1d37c8a2ba241173f4ae83e0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -214,6 +219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216791801044439576, guid: 49c7bacf1d37c8a2ba241173f4ae83e0,
+        type: 3}
+      propertyPath: actionButton
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49c7bacf1d37c8a2ba241173f4ae83e0, type: 3}
@@ -18681,6 +18691,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1788677658465517233, guid: fa9dd141df85d584fb3bb1fe08575ed7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3577624306906178403, guid: fa9dd141df85d584fb3bb1fe08575ed7,
         type: 3}
       propertyPath: m_Name
@@ -18740,6 +18755,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5576277221793896404, guid: fa9dd141df85d584fb3bb1fe08575ed7,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179762093505226445, guid: fa9dd141df85d584fb3bb1fe08575ed7,
+        type: 3}
+      propertyPath: m_DefaultActionMap
+      value: UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa9dd141df85d584fb3bb1fe08575ed7, type: 3}
