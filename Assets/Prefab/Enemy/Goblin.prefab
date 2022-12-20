@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 4134059888437131285}
-  maxHealth: 50
+  maxHealth: 15
 --- !u!114 &5092455032635108095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,9 +524,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackArea: {fileID: 403554110072791780}
-  attackRadius: 2
+  attackRadius: 1.7
   offsetAttack: 0.6
-  moveSpeed: 4
+  moveSpeed: 2
 --- !u!114 &5603087713511741496
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -356,10 +356,10 @@ GameObject:
   - component: {fileID: 3587858787748199645}
   - component: {fileID: 3587858787748199623}
   - component: {fileID: 3587858787748199622}
+  - component: {fileID: -7302600619396181972}
   - component: {fileID: 3587858787748199644}
   - component: {fileID: 8216791801044439576}
   - component: {fileID: 2289774510274835659}
-  - component: {fileID: -7302600619396181972}
   m_Layer: 9
   m_Name: Meow-Knight
   m_TagString: Player
@@ -494,61 +494,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3587858787748199644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587858787748199617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa94549fd2197372875ed27fea8144e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDodge: 0
-  moveSpeed: 5
-  jumpForce: 10
-  dodgeForce: 30
-  groundCheckRadius: 0.1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  groundCheck: {fileID: 3587858786186326608}
---- !u!114 &8216791801044439576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587858787748199617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea438f64e9168c418e0749e66dfb840, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxComboDelay: 1
-  speedAttack: 0.5
-  damage: 2
-  attackPoint: {fileID: 3034187074077575303}
-  attackRange: 0.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 1024
---- !u!114 &2289774510274835659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587858787748199617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7dcc363d2db59249be7dbac5f1024f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 410206738404478075}
-  maxHealth: 50
 --- !u!114 &-7302600619396181972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +525,55 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3587858787748199644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587858787748199617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa94549fd2197372875ed27fea8144e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDodge: 0
+  moveSpeed: 3
+  jumpForce: 10
+  dodgeForce: 10
+  groundCheckRadius: 0.1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  groundCheck: {fileID: 3587858786186326608}
+--- !u!114 &8216791801044439576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587858787748199617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea438f64e9168c418e0749e66dfb840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxComboDelay: 1
+  speedAttack: 0.5
+--- !u!114 &2289774510274835659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587858787748199617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dcc363d2db59249be7dbac5f1024f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 410206738404478075}
+  maxHealth: 50
 --- !u!1 &4426115886054374388
 GameObject:
   m_ObjectHideFlags: 0

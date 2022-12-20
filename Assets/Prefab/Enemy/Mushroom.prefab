@@ -601,7 +601,7 @@ MonoBehaviour:
   attackArea: {fileID: 1023302646890777507}
   attackRadius: 1.5
   offsetAttack: 0.35
-  moveSpeed: 4
+  moveSpeed: 1.5
 --- !u!114 &1286341948148841411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1460319035615057015}
-  maxHealth: 20
+  maxHealth: 10
 --- !u!1 &4754774118249287653
 GameObject:
   m_ObjectHideFlags: 0
