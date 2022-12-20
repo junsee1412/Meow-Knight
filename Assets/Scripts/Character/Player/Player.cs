@@ -65,7 +65,8 @@ public class Player : MonoBehaviour
         {
             gameObject.layer = LayerMask.NameToLayer("Enemies") ;
             int dx = flipX ? 1 : -1;
-            Vector2 force = new Vector2(dx, 0);
+            float forceY = rb.velocity.y > 0 ? rb.velocity.y : 0f ; 
+            Vector2 force = new Vector2(dx * dodgeForce, forceY);
             rb.AddForce(force * dodgeForce, ForceMode2D.Force);
             //  = new Vector2(dx * dodgeForce, rb.velocity.y);
         }

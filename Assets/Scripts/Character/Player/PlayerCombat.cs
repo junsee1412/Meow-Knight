@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerCombat : MonoBehaviour
 {
     private Animator animator;
+    private Rigidbody2D rb;
     private PlayerInput playerInput;
 
     private bool isAttack;
@@ -12,14 +13,11 @@ public class PlayerCombat : MonoBehaviour
     
     public float maxComboDelay = 1.0f;
     public float speedAttack = 0.5f;
-    public int damage = 2;
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
     
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
     }
 
