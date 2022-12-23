@@ -4,11 +4,16 @@ public class Health : MonoBehaviour
 {
     public HealthBar healthBar;
     public int maxHealth = 50;
-    private int currentHealth;
-    private Rigidbody2D rb;
-    private Animator animator;
-    private CapsuleCollider2D coll;
-    void Start()
+    
+    [HideInInspector]
+    public int currentHealth;
+    [HideInInspector]
+    public Rigidbody2D rb;
+    [HideInInspector]
+    public Animator animator;
+    [HideInInspector]
+    public CapsuleCollider2D coll;
+    public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -16,7 +21,7 @@ public class Health : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         currentHealth = maxHealth;
     }
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         animator.SetTrigger("Hurt");
         // Debug.Log($"TakeDamage at: {Time.time}");

@@ -1,5 +1,68 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163579641213661165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6626210701772248191}
+  - component: {fileID: 386778231496618561}
+  - component: {fileID: 7246113776136801236}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6626210701772248191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163579641213661165}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2334102574980561285}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386778231496618561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163579641213661165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18d63e57f04c7740ab40067c4b21b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 3587858787748199617, guid: 49c7bacf1d37c8a2ba241173f4ae83e0, type: 3}
+  damage: 5
+--- !u!70 &7246113776136801236
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163579641213661165}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 0.25}
+  m_Direction: 1
 --- !u!1 &1065291001545267090
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +176,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 20}
+  m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424438139618361535
 MonoBehaviour:
@@ -180,7 +243,8 @@ GameObject:
   - component: {fileID: 2334102574980561287}
   - component: {fileID: 2334102574980561284}
   - component: {fileID: 1241058763586580416}
-  - component: {fileID: 7345837533942701690}
+  - component: {fileID: 6561308614064584602}
+  - component: {fileID: 4113765673407155088}
   m_Layer: 10
   m_Name: Minotaur
   m_TagString: Enemy
@@ -197,11 +261,12 @@ Transform:
   m_GameObject: {fileID: 2334102574980561304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.143, y: -0.201, z: 0.010125055}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 768308086924913465}
   - {fileID: 6017705330010356161}
+  - {fileID: 6626210701772248191}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -328,12 +393,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   attackArea: {fileID: 768308086924913465}
-  attackRadius: 1
-  offsetAttack: 0.3
-  moveSpeed: 5
---- !u!114 &7345837533942701690
+  attackRadius: 2
+  offsetAttack: 0.5
+  moveSpeed: 2.2
+--- !u!114 &6561308614064584602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,11 +407,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 2334102574980561304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7dcc363d2db59249be7dbac5f1024f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f9771adfae7df914696c2c7026893953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  lastAttackTime: 0
+  inRanged: 0
+  speedAttack: 2.5
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  hitRange: {fileID: 768308086924913465}
+  hitRangeRadius: 0.5
+  stateOfCrit: 4
+--- !u!114 &4113765673407155088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334102574980561304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36731d097dee81f42866bb718dd2ea02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 3477126951599192158}
-  maxHealth: 20
+  maxHealth: 50
+  currentHealth: 0
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  coll: {fileID: 0}
 --- !u!1 &4154277468721799713
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 424438139618361535}
-  offset: {x: 0, y: 0.3, z: 0}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &5769019660265654279
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +645,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!1 &8390684215010625396
 GameObject:
   m_ObjectHideFlags: 0
